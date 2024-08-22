@@ -52,3 +52,6 @@ The following aspects of the data are intended for analysis:
 - **UV Index**: Predicting the UV index level.
 
 This dataset is designed to be used for weather prediction analysis, focusing on the time period from August 21, 2024, to December 31, 2024.
+
+
+drop: snow, snowdepth, icon, severe risk, 
