@@ -57,17 +57,17 @@ print(raw_data.iloc[[0,5,48], [2, 5]] ) # Refer using column ID
 # 3.2 Scatter plot b/w 2 features
 if 1:
     raw_data.plot(kind="scatter", y="PRICE IN MILLION VND", x="NUMBER OF BEDROOMS", alpha=0.2)
-    #plt.axis([0, 5, 0, 10000])
+    plt.axis([0, 5, 0, 10000])
     plt.savefig('figures/scatter_1_feat.png', format='png', dpi=300)
     plt.show()      
-if 0:
+if 1:
     raw_data.plot(kind="scatter", y="PRICE IN MILLION VND", x="AREA IN M2", alpha=0.2)
-    #plt.axis([0, 5, 0, 10000])
-    #plt.savefig('figures/scatter_2_feat.png', format='png', dpi=300)
+    plt.axis([0, 5, 0, 10000])
+    plt.savefig('figures/scatter_2_feat.png', format='png', dpi=300)
     plt.show()
 
 # 3.3 Scatter plot b/w every pair of features
-if 0:
+if 3:
     from pandas.plotting import scatter_matrix   
     features_to_plot = ["PRICE IN MILLION VND", "NUMBER OF BEDROOMS", "NUMBER OF TOILETS", "AREA IN M2"]
     scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
@@ -75,15 +75,15 @@ if 0:
     plt.show()
 
 # 3.4 Plot histogram of 1 feature
-if 0:
+if 4:
     from pandas.plotting import scatter_matrix   
     features_to_plot = ["PRICE IN MILLION VND"]
     scatter_matrix(raw_data[features_to_plot], figsize=(12, 8)) # Note: histograms on the main diagonal
     plt.show()
 
 # 3.5 Plot histogram of numeric features
-if 0:
-    #raw_data.hist(bins=10, figsize=(10,5)) #bins: no. of intervals
+if 5:
+    raw_data.hist(bins=10, figsize=(10,5)) #bins: no. of intervals
     raw_data.hist(figsize=(10,5)) #bins: no. of intervals
     plt.rcParams['xtick.labelsize'] = 10
     plt.rcParams['ytick.labelsize'] = 10
@@ -93,7 +93,7 @@ if 0:
 
 # 3.6 Compute correlations b/w features
 corr_matrix = raw_data.corr(numeric_only=True)
-#print(corr_matrix) # print correlation matrix
+print(corr_matrix) # print correlation matrix
 print('\n',corr_matrix["PRICE IN MILLION VND"].sort_values(ascending=False)) # print correlation b/w a feature and other features
 
 # 3.7 Try combining features
@@ -565,7 +565,6 @@ Suggested improvements:
     - Add more samples: Increase the sample size to improve the model's generalization ability.
 ''')
 #endregion
-
 
 
 # In[8]: STEP 8. LAUNCH, MONITOR, AND MAINTAIN YOUR SYSTEM

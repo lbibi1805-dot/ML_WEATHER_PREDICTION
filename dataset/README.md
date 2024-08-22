@@ -44,12 +44,9 @@ This dataset contains weather data recorded over time. Each feature is described
 The following aspects of the data are intended for analysis:
 
 - **Temperature**: Predicting the minimum, maximum, and average temperatures.
-- **Humidity**: Predicting the level of humidity.
-- **Precipitation**: Predicting the amount of rainfall.
-- **Wind**: Predicting the wind speed and direction.
-- **Cloud Cover**: Predicting the percentage of cloud cover.
-- **Visibility**: Predicting the visibility distance.
-- **UV Index**: Predicting the UV index level.
+- **feelslike**:
+- **dew**: 
+
 
 This dataset is designed to be used for weather prediction analysis, focusing on the time period from August 21, 2024, to December 31, 2024.
 
