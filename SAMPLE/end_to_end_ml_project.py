@@ -368,12 +368,12 @@ print("Labels:      ", list(train_set_labels[0:9]))
 
 #%% 5.5 Evaluate with K-fold cross validation 
 from sklearn.model_selection import cross_val_score
-#from sklearn.model_selection import ShuffleSplit, StratifiedKFold, StratifiedShuffleSplit
-#from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import ShuffleSplit, StratifiedKFold, StratifiedShuffleSplit
+from sklearn.model_selection import cross_val_predict
 
-#cv1 = ShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
-#cv2 = StratifiedKFold(n_splits=10, random_state=42); 
-#cv3 = StratifiedShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
+# cv1 = ShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
+# cv2 = StratifiedKFold(n_splits=10, random_state=42); 
+# cv3 = StratifiedShuffleSplit(n_splits=10, test_size=0.2, random_state=42); 
 print('\n____________ K-fold cross validation ____________')
 
 run_new_evaluation = 0
