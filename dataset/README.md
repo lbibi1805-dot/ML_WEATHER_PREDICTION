@@ -40,15 +40,8 @@ This dataset contains weather data recorded over time. Each feature is described
 - **stations**: The identifiers of the weather stations that recorded the data.
 
 ## Analysis Goals
+Predicting temperature specifically plays a crucial role in human life by helping people make informed decisions about daily activities, energy consumption, and health management. For instance, accurate temperature forecasts allow individuals to dress appropriately for the weather, avoiding discomfort or health risks such as heatstroke in high temperatures or hypothermia in cold conditions. Businesses, especially those in industries like agriculture and construction, rely on temperature predictions to plan operations efficiently and protect their resources. Additionally, power companies use temperature forecasts to manage energy demand, ensuring that heating or cooling systems are adequately supplied. Thus, temperature predictions directly influence safety, productivity, and resource management in everyday life.
 
 The following aspects of the data are intended for analysis:
-
 - **Temperature**: Predicting the minimum, maximum, and average temperatures.
-- **feelslike**:
-- **dew**: 
-
-
 This dataset is designed to be used for weather prediction analysis, focusing on the time period from August 21, 2024, to December 31, 2024.
-
-
-drop: snow, snowdepth, icon, severe risk, 
