@@ -1,4 +1,4 @@
-# AI_FOUND_TEAM_01
+# AI_FOUND_TEAM_01 - Weather Forecast Machine Learning
 1. Member: Luong Chi Bach, Tran Nhat Minh, Khong Quoc Khanh, Dao Duc Lam, Duong Bao Ngoc, Tran Dinh Hai.
 
 # ENVIRONMENT: Python 3.12.4.
